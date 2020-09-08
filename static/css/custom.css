@@ -1,3 +1,46 @@
+/* tuerme iconfont */
+@font-face {
+    font-family: 'tuerme';
+    src: url(data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAAS8AA0AAAAABqgAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABMAAAABwAAAAccwBHvEdERUYAAAFMAAAAHAAAAB4AJwAOT1MvMgAAAWgAAABCAAAAVlYLYtRjbWFwAAABrAAAAEwAAAFKBN0JZ2dhc3AAAAH4AAAACAAAAAj//wADZ2x5ZgAAAgAAAAEFAAABVE3CNftoZWFkAAADCAAAADAAAAA2BUBmTWhoZWEAAAM4AAAAHQAAACQIKAQFaG10eAAAA1gAAAAXAAAAGA6zAvVsb2NhAAADcAAAABIAAAASAWIA7G1heHAAAAOEAAAAHgAAACAATgAnbmFtZQAAA6QAAADoAAABjBUb2a1wb3N0AAAEjAAAADAAAABawnVZFgAAAAEAAAAA0PODoAAAAADQ8TN+AAAAANEbkJ14nGNgZGBg4AFiMSBmYmAEQnYgZgHzGAAD6wA2eJxjYGRhYJzAwMrAwTST6QwDA0M/hGZ8zWDMyMnAwMTACiShgJEBCQSkuaYwODAkMqQyG/83ZohhUUaoAQC/eQmQAAB4nGNgYGBmgGAZBkYGEHAB8hjBfBYGDSDNBqQZGZiArNT//8EqEkH0/0VQ9UDAyMYA5zCCVDIxoAJGBsoBMwsrGzsVzKERAADz5gdMAAAAAf//AAJ4nE3PvUrEQBAH8JldLxuVVImZBBQRIbuIucBxmEYR1lcIV6Q5rCw2jdXVPoe1wVewyQN4D3GdT2B7nhNj4Kr5YH78d+EA7G4j3+UDHMIJnMIlAM6nqFWs6EZmOvO40iymUHu8nKH2Iioz+XYUBU2auuJ7sZw/FS6fRlnoXFW5+vPnxeW5S/H1/O72rOHVEr+uBMbUBOh520fH7lpMmnpduwo4EKwIcCUtHAOEpEhppUtd0kenfeObziQmkbYzvu4HMgkb8SwC2Q4GR1CSki3f8WWnGYn1iBJDveG/thj1ZjICTpPFXtBFZ9TQ6+TvbbsNrgZzj/+A0+xezKLv1Uh+AUbBQhEAAAB4nGNgZGBgAOI+v/An8fw2Xxm4WRhA4KL0RHE47fT/PvMKZmcgl4OBCSQKABxkCgt4nGNgZGBgUWZgYIhhYQAB5hUMjAyogAUAG+kBOQAAAHicY2GAABYIdmJwYipkKmRwAgAI5gG5AAAAAAAAAAAAAEIAXAB2AJAAqgAAeJxjYGRgYOBgUGFgYQABJiBmZACJOYD5DAAG8QB2AAB4nH2OMU7DQBBFnxPHJCJCNFBvAaUt2yuK5AARdYr0KTZWpMSWHFvchIoz0HIMDsAZuAPf1tBQsNLsvJn/ZzTAklcihheRcGM84YpH4ykPvBjHzHk3nnHNp3Gi/recUbxQZzlODTzRxjvjKc+kxjG3vBnPuOfDOFH/i46eQMtZP10f2rPyVkUl4cReEttQ9ae9YENDrZEht3IEHCUZufJacTDds1J463rpKYWiFBU8aVFTd5umrYIrs9yt3UG1X3kv9HlapGVeyPV3Hb822I1HXziOFqetwxXsQns5NrUrsvy/8R8DBDaReJxjYGJABowM6IADLMrEyMTIzMjCyMrIxp6eU1mQoWAIpY2gtDGUNoHSpgAH7Aye) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.oih-icon {
+    font-family: tuerme;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+    display: inline-block;
+    letter-spacing: -1em;
+    width: 1em;
+}
+.oih-icon::before {
+    content: "abde";
+    color: #de88cd;
+}
+.oih-icon::after {
+    content: "c";
+}
+@media print {
+.oih-icon::before, .logotext {
+    color: #000;
+}
+.oih-icon::after {
+    color: #999;
+}
+}
+.logohead {
+    font-size: 3em;
+}
+.logotext {
+    font-weight: 300;
+    letter-spacing: -0.08em;
+    line-height: 1em;
+}
+
+/*****/
+
+
 a {
   color: #111;
   text-decoration: none;
@@ -5,7 +48,7 @@ a {
 }
 
 a:hover {
-  color: #0FA0CE;
+  color: #a02c89;
 }
 
 .toggle,
@@ -17,7 +60,7 @@ nav {
   margin: 0;
   padding: 0;
   display: block;
-  background: #222;
+  background: #a02c89;
 }
 
 nav::after {
@@ -55,7 +98,7 @@ nav a {
   font-size: 14px;
   padding: 14px 12px;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 nav a:link {
@@ -69,7 +112,10 @@ nav a:visited {
 }
 
 nav a:hover {
-  background: #333;
+    color: #de88cd;
+}
+nav a:hover .logohead {
+    color: #fff;
 }
 
 nav ul li ul li:hover {
@@ -130,7 +176,7 @@ nav ul li>a:only-child::after {
   }
 
   .toggle:hover {
-    background-color: #333;
+    background-color: #a02c89;
   }
 
   [id^="drop"]:checked+ul {
@@ -153,7 +199,7 @@ nav ul li>a:only-child::after {
 
   nav a,
   nav ul ul ul a {
-    background-color: #222;
+    background-color: #a02c89;
     text-decoration: none;
     width: 100%;
     text-align: left;
@@ -162,7 +208,7 @@ nav ul li>a:only-child::after {
 
   nav a:hover,
   nav ul ul ul a {
-    background-color: #111;
+    background-color: #a02c89;
     text-decoration: none;
   }
 
@@ -176,7 +222,7 @@ nav ul li>a:only-child::after {
 
   nav ul li ul li .toggle,
   nav ul ul a {
-    background-color: #555;
+    background-color: #de88cd;
   }
 
   nav ul ul {
@@ -259,7 +305,7 @@ nav ul li>a:only-child::after {
 }
 
 .hero {
-  background: #222;
+  background: #a02c89;
   background-size: 100%;
   background-repeat: no-repeat;
   color: #eeeeee;
@@ -300,7 +346,7 @@ footer {
 }
 
 footer a {
-  color: #fff;
+  color: #ccc;
   text-decoration: underline;
   font-weight: 500;
 }
